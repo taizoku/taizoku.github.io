@@ -32,14 +32,22 @@ footer, header, hgroup, menu, nav, section {
 #hello {
     font-family: 'Inconsolata', monospace;
     font-size: 30px;
-    color: #2962ff
+    color: #2962ff;
+    font-weight: 200;
 }
 
 body {
-    line-height: 1;
+    height: 100%;
+    position: inherit;
+    line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
     background-color: #eceff1;
     color: #212121;
+    border-spacing: 10px;
+}
+
+#bodyText {
+    text-indent: 20px;
 }
 
 ol, ul {
