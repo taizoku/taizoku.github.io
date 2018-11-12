@@ -64,9 +64,6 @@ header.navbar>h1 {
 }
 
 header.navbar>nav {
-    /*position: static;
-    width: 100%;
-    /*height: 35px;*/
     float: right;
 }
 
@@ -86,6 +83,7 @@ header.navbar>nav>a:hover, a:active {
     color: #64ffda;
 }
 
+/* ANCHOR LINKS */
 a {
     color: #263238;
     text-decoration: none;
@@ -95,6 +93,7 @@ a:hover, a:active {
     color: #64ffda;
 }
 
+/* BODY */
 h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 30px;
@@ -110,11 +109,10 @@ body {
     line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
     color: #212121;
-    border-spacing: 10px;
 }
 
-#bodyText {
-    text-indent: 20px;
+article.main {
+    padding: 25px 5%;
 }
 
 footer {
@@ -123,7 +121,7 @@ footer {
     width: 100%;
     height: 60px;
     
-    color: ##212121;
+    color: #212121;
     font-size: 12px;
     text-align: center;
 }
