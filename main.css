@@ -84,7 +84,7 @@ header.navbar>h1 {
     padding: 8px;
 
     font-family: 'Inconsolata', monospace;
-    font-weight: 300px;
+    font-weight: 700px;
     font-size: 23px;
 }
 
@@ -92,8 +92,7 @@ header.navbar>nav {
     /*position: static;
     width: 100%;
     /*height: 35px;*/
-    
-    float:right;
+    float: right;
 }
 
 header.navbar>nav>a {
@@ -103,14 +102,18 @@ header.navbar>nav>a {
     color: white;
     
     text-align: right;
-    padding: 15px 8px;
+    padding: 10px; 8px;
     
-    float: none;
+    float: left;
 }
 
 #profile-image {
     float: right;
     padding: 20px;
+}
+
+header.navbar>nav>a:hover, a:active {
+    color: #64ffda;
 }
 
 a {
