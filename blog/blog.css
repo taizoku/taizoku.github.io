@@ -112,6 +112,8 @@ body {
 }
 
 article.main {
+    float: none;
+    overflow: none;
     padding: 25px 5%;
 }
 
