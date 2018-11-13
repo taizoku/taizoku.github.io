@@ -59,7 +59,7 @@ header.navbar>h1 {
     padding: 8px;
 
     font-family: 'Inconsolata', monospace;
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 23px;
 }
 
@@ -74,7 +74,7 @@ header.navbar>nav>a {
     color: white;
     
     text-align: right;
-    padding: 10px; 8px;
+    padding: 10px 8px;
     
     float: left;
 }
@@ -94,29 +94,34 @@ a:hover, a:active {
 }
 
 /* BODY */
-h1 {
-    font-family: 'Inconsolata', monospace;
-    font-size: 30px;
-    color: #2962ff;
-    font-weight: 300;
-}
-
-    h2 {
-        font-family: 'Inconsolata', monospace;
-        font-size: 20px;
-        color: #212121;
-        font-weight: 550;
-        padding-top: 10px;
-    }
-
 body {
     height: 100%;
     position: inherit;
     background-color: #eceff1;
     
-    line-height: 1.4;
+    line-height: 1.7em;
     font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
     color: #212121;
+    border-spacing: 10px;
+}
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    color: #2962ff;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3em;
+    color: #212121;
+    font-weight: bold;
+}
+
+p {
+    padding-bottom: 15px;
 }
 
 article.main {

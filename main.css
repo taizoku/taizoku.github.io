@@ -128,13 +128,22 @@ article.main>p {
     
 }
 
-h2 {
-    font-family: 'Inconsolata', monospace;
-    font-size: 24px;
-    font-weight: bolder;
-    font-weight: 400;
-    color: #2962ff;
-    padding-top: 10px;
+    h1 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 2em;
+        color: #2962ff;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.2em;
+        color: #212121;
+        font-weight: bold;
+    }
+
+p {
+    padding-bottom: 10px;
 }
 
 li {

@@ -54,9 +54,9 @@ body {
     position: inherit;
     background-color: #eceff1;
     
-    line-height: 1.4;
+    line-height: 1.7em;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #212121;
     border-spacing: 10px;
 }
@@ -87,7 +87,7 @@ body {
         color: white;
 
         text-align: right;
-        padding: 10px; 8px;
+        padding: 10px 8px;
 
         float: left;
     }
@@ -111,16 +111,16 @@ body {
 
     h1 {
         font-family: 'Inconsolata', monospace;
-        font-size: 30px;
+        font-size: 2em;
         color: #2962ff;
-        font-weight: 550;
+        font-weight: bolder;
     }
 
     h2 {
         font-family: 'Inconsolata', monospace;
-        font-size: 20px;
+        font-size: 1.3em;
         color: #212121;
-        font-weight: 550;
+        font-weight: bold;
     }
 
     #completed {
@@ -135,9 +135,9 @@ body {
         font-family: 'Inconsolata', monospace;
         white-space: nowrap;
         margin: 0;
-        padding: 0 2px;
+        padding: 0 0.35em;
 
-        font-size: 12px;
+        font-size: 1em;
 
         background-color: #f3f3f3;
         border: 1px solid #ddd;

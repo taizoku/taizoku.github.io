@@ -70,7 +70,7 @@ header.navbar>h1 {
     padding: 8px;
 
     font-family: 'Inconsolata', monospace;
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 23px;
 }
 
@@ -85,7 +85,7 @@ header.navbar>nav>a {
     color: white;
     
     text-align: right;
-    padding: 10px; 8px;
+    padding: 10px 8px;
     
     float: left;
 }
