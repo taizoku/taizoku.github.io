@@ -81,7 +81,7 @@ header.navbar>nav {
 header.navbar>nav>a {
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
-    font-weight: 300px;
+    font-weight: 300;
     color: white;
     
     text-align: right;
@@ -103,6 +103,10 @@ a:hover, a:active {
     color: #64ffda;
 }
 
+article.main {
+    padding: 25px 5%
+}
+
 h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 30px;
@@ -115,6 +119,20 @@ h2 {
     font-size: 20px;
     color: #212121;
     font-weight: 550;
+}
+
+h3 {
+    
+}
+
+ul {
+    padding-bottom: 10px
+}
+
+li {
+    display: list-item;
+    margin-left: 30px;
+    list-style-type: circle;
 }
 
 footer {
