@@ -123,6 +123,10 @@ body {
         font-weight: 550;
     }
 
+    #completed {
+        padding-top: 15px;
+    }
+
     p {
         padding-bottom: 15px;
     }
