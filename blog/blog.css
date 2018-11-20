@@ -74,7 +74,7 @@ header.navbar>nav>a {
     color: white;
     
     text-align: right;
-    padding: 10px 8px;
+    padding: 10px; 8px;
     
     float: left;
 }
