@@ -10,3 +10,4 @@ The languages that I will probably be looking to use are:
 I would also like to perhaps experiment a bit with other frameworks like Flask, etc.
 
 You can also visit the redirect using http://ryotokuro.co/ to watch me slowly figure things out :)
+Website link will expire soon want to update this :(
