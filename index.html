@@ -3,65 +3,53 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Taiyue Tan | ryotokuro</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    
-    <body>
-        <header class="navbar">
-            <h1>
-                <a href="/" id="logo">^ryotokuro_</a>
-            </h1>
+    <meta charset="utf-8">
+    <title>Taiyue Tan | ryotokuro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
 
-            <nav>
-                <a href="#" class="nav">Home</a>
+<body>
+    <header class="navbar">
+        <h1>
+            <a href="/" id="logo">^ryotokuro_</a>
+        </h1>
 
-                <a href="/blog/blog.html" class="nav">Blog</a>
+        <nav>
+            <a href="#" class="nav">Home</a>
 
-                <a href="/projects/projects.html" class="nav">Projects</a>
+            <a href="/blog/blog.html" class="nav">Blog</a>
 
-                <a href="/learning/learning.html" class ="nav">Learning</a>
+            <a href="/projects/projects.html" class="nav">Projects</a>
 
-                <a href="/memberships/memberships.html" class ="nav">Memberships</a>
-            </nav>
-        </header>
-        
-        <header class="profile">
-            <img src="static/img/profile.png" id="profile-image" width="150" height="150">
-        </header>
-        
-        <article class="main">
-            <h1 id="hello">Hello World!</h1>
-            <div class='col-1-3'>
-            
-            Hello there</div>
-            <div class='col-1-3'>
-            
-            Hello there</div>
-            <p>
-                I am Tai, and welcome to my website. <br>
+            <a href="/learning/learning.html" class="nav">Learning</a>
+
+            <a href="/memberships/memberships.html" class="nav">Memberships</a>
+        </nav>
+    </header>
+
+    <article class='main'>
+        <section class='col-1-3'>
+            <h1 class='hello'>Hello World!</h1>
+            <div>
+                Hi, I'm Tai - and welcome to my website. <br>
                 Mechatronics Engineering/Computer Science student at The University of New South Wales. <br>
                 I love to <a href="/learning/learning.html">learn</a>, and I am always looking to further myself!
-            </p>
-            <h2>Things I use</h2>
-            <p>
-                C, C++, Python, Kotlin, Java, HTML/CSS/Bootstrap, ReactJS
-            </p>
+            </div>
 
-            <p>
-                LaTeX, MATLAB, TensorFlow, Python Flask
-            </p>
+            <div>
+                <h2>Things I use</h2>
+                <p>
+                    C, C++, Python, Kotlin, Java, HTML/CSS, React
+                </p>
 
-            <h2>You can reach me on...</h2>
-            <ul>
-                <div id="GitHub">
-                    <ButtonToolbar>
-                        <Button href="https://github.com/ryotokuro" size="lg" active>GitHub</Button>
-                    </ButtonToolbar>
-                </div>
-                <div id="LinkedIn"></div>
-                <div id="Email"></div>
+                <p>
+                    LaTeX, MATLAB, TensorFlow, Flask, Django
+                </p>
+
+            </div>
+
+            <div>
+                <h2>You can reach me on...</h2>
                 <li>
                     <a href="https://github.com/ryotokuro">GitHub</a>
                 </li>
@@ -69,22 +57,27 @@
                 <li>
                     <a href="https://linkedin.com/in/taiyue">LinkedIn</a>
                 </li>
-            </ul>
-        </article>
-        
-        <footer>
-            Copyright © Taiyue Tan 2018. <br>
-            This website is open source and <a href="https://github.com/ryotokuro/ryotokuro.github.io">available here</a>.
-        </footer>
-        
-        <!-- Load React. -->
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+            </div>
+        </section>
+    </article>
+    
+    <!--
+    <section class='col-1-3'>
+        <img src="static/img/profile.png" id="profile-image" width="150" height="150">
+    </section> -->
 
-        <!-- Load our React component. -->
-        <script src="GitHub.js">
-        </script>
+    <footer>
+        Copyright © Taiyue Tan 2018. <br>
+        This website is open source and <a href="https://github.com/ryotokuro/ryotokuro.github.io">available here</a>.
+    </footer>
 
-    </body>
-</html>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="GitHub.js">
+    </script>
+
+</body></html>
