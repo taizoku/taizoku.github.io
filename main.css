@@ -1,5 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
+/*
+===============================
+RESET CSS
+===============================
 */
 
 html, body, div, span, applet, object, iframe,
@@ -29,56 +31,105 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-html {
-    font-size: 12pt;
+/*
+===============================
+Grid
+===============================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+/*
+===============================
+Global
+===============================
+*/
+
+html {
+    box-sizing: border-box;
+    
+    font-size: 24pt;
     color: #212121;
+    font-family: 'Moderat Regular', Helvetica, Arial, sans-serif;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
+/* Common class 'Container' for all the page elements' */
+.container {
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 50%;
+}
+
+section {
+    margin-bottom: 1.5em;
+}
+
+/*
+===============================
+Headers
+===============================
+*/
+
+h1, h3, h4, h5, p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+    
+    line-height: 1em;
+    color: #2962ff;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 0.5em;
 }
 
 .hello {
-    font-family: 'Moderat Regular;
     font-size: 1.5em;
-    color: #2962ff;
-    font-weight: 750;
-}
-
-body {
-    position: inherit;
-    background-color: #eceff1;
+    font-weight: 700;
     
-    line-height: 1.4;
-    font-family: 'Moderat Regular';
-    color: #212121;
-    font-size: 2em;
-    border-spacing: 10px;
+    color: #2962ff;
 }
 
-.col-1-3 {
-    width: 32%;
-    padding: 1em;
+.logo {
+    float: left;
+    font-size: 0.8em;
     display: inline-block;
 }
 
-ol, ul {
-    list-style: none;
+/*
+===============================
+Navigation
+===============================
+*/
+.main-nav {
+    display: inline-block;
+    font-size: 0.8em;
+    
+    word-spacing: 1em;
+    float: right;
 }
 
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* NAVIGATION */
 header.navbar {
     overflow: hidden;
     background-color: #2962ff;
@@ -125,41 +176,21 @@ a {
 
 a:hover, a:active {
     color: #64ffda;
-}   
+}
 
-article.main>p {
+/*
+===============================
+Body
+===============================
+*/
+
+body {
+    background: #eceff1;
     
-}
-
-h1 {
-    font-family: 'Moderat Regular';
-    font-size: 2em;
-    color: #2962ff;
-    font-weight: 300;
-}
-
-h2 {
-    font-family: 'Moderat Regular';
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-div {
-    margin-bottom: 0.5em;
-}
-
-p {
-    padding-bottom: 10px;
-}
-
-li {
-    display: list-item;
-    margin-left: 1em;
-    list-style-type: circle;
+    line-height: 1.4em;
 }
 
 footer {
-    position: inherit;
     bottom: 0;
     width: 100%;
     height: 3em;
