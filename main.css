@@ -105,10 +105,12 @@ h2 {
 }
 
 .hello {
+    display: inline-block;
     font-size: 1.5em;
     font-weight: 700;
+    color: #304ffe;
     
-    color: #2962ff;
+    margin-top: 1em;
 }
 
 .logo {
@@ -175,7 +177,8 @@ a {
 }
 
 a:hover, a:active {
-    color: #64ffda;
+    color: #304ffe;
+    text-decoration: underline;
 }
 
 /*
@@ -189,6 +192,23 @@ body {
     
     line-height: 1.4em;
 }
+
+.box {
+    display: inline-block;
+    padding: 0.5em;
+    border: 0.12em solid;
+}
+
+.box:hover {
+    color: #eceff1;   
+    background: #7a7cff;
+}
+
+/*
+===============================
+Footer
+===============================
+*/
 
 footer {
     bottom: 0;
