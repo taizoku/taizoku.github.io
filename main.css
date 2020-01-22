@@ -1,84 +1,16 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -100,6 +32,33 @@ menu,
 nav,
 section {
     display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -129,14 +88,6 @@ section {
     width: 840px;
     /* fixed width */
 }
-
-
-/*
-.container {
-    padding-left: 10px;
-    padding-right: 40px;
-}
-*/
 
 
 /*
@@ -245,6 +196,7 @@ p {
 h1 {
     color: #1a73e8;
     font-size: 60px;
+
     margin: 0 0 16px;
     line-height: 72px;
 }
@@ -252,6 +204,7 @@ h1 {
 h2 {
     color: rgb(33, 33, 33);
     font-size: 32px;
+
     margin: 0 0 8px;
     line-height: 48px;
 }
@@ -360,15 +313,16 @@ header {
     width: 0;
 }
 
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
+
 /*
-===============================
-Home (Body)
-===============================
+    ===============================
+    Home (Body)
+    ===============================
 */
 body {
     background: #fff;
@@ -412,25 +366,34 @@ body {
   Buttons
   ========================================
 */
-.btn {
+.button {
     color: rgb(33, 33, 33);
+    text-align: center;
     padding: 8px;
+    margin-right: 10px;
+    width: 100px;
+
     border: 0.12em solid rgb(32, 32, 32);
+    border-radius: 4px;
     display: inline-block;
 }
 
-.btn:hover {
+.button:hover {
     color: #fff;
+    text-align: center;
     background: #1a73e8;
+    width: 100px;
+
     border: 0.12em solid rgb(32, 32, 32);
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.btn:visited {
+.button:visited {
     color: rgb(33, 33, 33);
 }
 
-.btn:visited:hover {
+.button:visited:hover {
     color: #eceff1;
 }
 
@@ -443,12 +406,12 @@ Footer
 footer {
     padding: 32px 0 32px;
     position: fixed;
-    
+
     background: #eceff1;
     color: #616161;
     font-size: 14px;
     line-height: 1.8;
-    
+
     bottom: 0px;
     left: 0px;
     right: 0px;
