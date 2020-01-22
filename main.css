@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -40,171 +117,321 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+/* 
+    ========================================
+    Container Class
+    ========================================
+*/
+.container,
+.grid {
+    margin: 0 auto;
+    /* center content */
+    width: 840px;
+    /* fixed width */
+}
+
+
+/*
+.container {
+    padding-left: 10px;
+    padding-right: 40px;
+}
+*/
+
+
+/*
+    ========================================
+    Clearfix
+    ========================================
+*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
 /*
     ===============================
     Global
     ===============================
 */
 html {
-    box-sizing: border-box;
-    font-size: 24pt;
-    color: #212121;
-    font-family: 'Moderat Regular', Helvetica, Arial, sans-serif;
+    color: rgb(33, 33, 33);
+    color: #616161;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/*
+  ========================================
+  Reusable Layouts (Grid, Columns)
+  ========================================
+*/
+/* Add spacing to accommodate spacing on end of columns with edge of page */
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+.row,
+.row-alt {
+    min-width: 840px;
+}
+
+.row {
+    background: #fff;
+    min-width: 840px;
+    padding: 66px 0 44px 0;
+}
+
+.row-alt {
+    background: #cbe2c1;
+    /*backup colour*/
+    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 44px 0 22px 0;
+}
+
+
+/*
+    ===============================
+    Typography
+    ===============================
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 22px;
+}
+
+h1 {
+    color: #1a73e8;
+    font-size: 60px;
+    margin: 0 0 16px;
+    line-height: 72px;
+}
+
+h2 {
+    color: rgb(33, 33, 33);
+    font-size: 32px;
+    margin: 0 0 8px;
+    line-height: 48px;
+}
+
+h3 {
+    color: rgb(33, 33, 33);
+    font-size: 24px;
 }
 
 strong {
     font-weight: 400;
 }
 
-cite, em {
+cite,
+em {
     font-style: italic;
-}
-
-/* Common class 'Container' for all the page elements' */
-.container {
-    margin: 0 auto;
-    padding-left: 2em;
-    padding-right: 2em;
-    width: 60%;
-}
-
-section {
-    margin-bottom: 1.5em;
 }
 
 
 /*
     ===============================
-    Headers
+    Links (Anchors)
     ===============================
 */
-h1, h3, h4, h5, p {
-    margin-bottom: 0.5em;
+a,
+a:hover {
+    color: #1a73e8;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-h1 {
-    font-size: 1.5em;
-    font-weight: 800;
-    
-    line-height: 1em;
-    color: #2962ff;
+a:visited {
+    color: #1a73e8;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-h2 {
-    font-size: 1.2em;
-    font-weight: 600;
-    line-height: 1em;
-    margin-bottom: 0.5em;
-}
 
-.title {
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: 700;
-    color: #304ffe;
-    
-    margin-top: 1em;
+/*
+    ===============================
+    Header
+    ===============================
+*/
+header {
+    background: rgb(33, 33, 33);
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    min-width: 100%;
+    padding: 32px 32px 0 32px;
 }
 
 .logo {
     float: left;
-    font-size: 0.8em;
-    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
 }
 
-
-/*
-===============================
-Navigation
-===============================
-*/
-.main-nav {
-    display: inline-block;
-    font-size: 0.8em;
-    
-    word-spacing: 1em;
-    float: right;
-}
-
-header.navbar {
-    overflow: hidden;
-    background-color: #2962ff;
-}
-
-header.navbar>h1 {
-    float: left;
-    padding: 8px;
-
-    font-family: 'Moderat';
-    color: white;
-    font-weight: 300;
-    font-size: 0.9em;
-}
-
-header.navbar>nav {
-    float: right;
-}
-
-header.navbar>nav>a {
-    float: left;
-    text-align: right;
-    padding: 0.5em;
-    
-    font-family: 'Moderat Regular';
-    font-size: 0.9em;
-    font-weight: 300;
-    color: white;
-}
-
-header.navbar>nav>a:hover, a:active {
-    color: #64ffda;
-}
-
-header.profile {
-    float: right;
-    padding: 20px;
-}
-
-a {
-    color: #263238;
+.logo a,
+.logo a:hover,
+.logo a:visited {
+    color: #fff;
     text-decoration: none;
 }
 
-a:hover, a:active {
-    color: #304ffe;
-    text-decoration: underline;
+
+/*
+    ===============================
+    Navigation
+    ===============================
+*/
+.top-nav {
+    text-transform: lowercase;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav li {
+    position: relative;
+    padding: 0 16px 32px 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav li:last-child {
+    padding-right: 0;
+}
+
+.nav a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/*
+===============================
+Home (Body)
+===============================
+*/
+body {
+    background: #fff;
+}
+
+.main {
+    padding: 40px 0 40px;
+    line-height: 30px;
+}
+
+.description {
+    padding-bottom: 16px;
+}
+
+.technology {
+    padding-bottom: 32px;
+    border-bottom: 0.12rem solid #eceff1;
+}
+
+.design {
+    padding: 32px 0 32px;
+    border-bottom: 0.12rem solid #eceff1;
+}
+
+.technology li,
+.design li {
+    display: inline-block;
+}
+
+.contact {
+    padding: 32px 0 32px;
+}
+
+.links .btn {
+    margin-right: 10px;
 }
 
 
 /*
-===============================
-Body
-===============================
+  ========================================
+  Buttons
+  ========================================
 */
-body {
-    background: #eceff1;
-    line-height: 1.4em;
-}
-
-.description {
-    margin-bottom: 1em;
-}
-
-.technology li {
-    display: inline-block;
-}
-
 .btn {
+    color: rgb(33, 33, 33);
+    padding: 8px;
+    border: 0.12em solid rgb(32, 32, 32);
     display: inline-block;
-    padding: 0.5em;
-    border: 0.12em solid #000;
 }
 
 .btn:hover {
-    color: #eceff1;   
-    background: #7a7cff;
-    border: 0.12em solid #000;
+    color: #fff;
+    background: #1a73e8;
+    border: 0.12em solid rgb(32, 32, 32);
     cursor: pointer;
+}
+
+.btn:visited {
+    color: rgb(33, 33, 33);
+}
+
+.btn:visited:hover {
+    color: #eceff1;
 }
 
 
@@ -214,10 +441,37 @@ Footer
 ===============================
 */
 footer {
-    bottom: 0;
-    width: 100%;
-    height: 3em;
+    padding: 32px 0 32px;
+    position: fixed;
     
-    font-size: 0.5em;
-    text-align: center;
+    background: #eceff1;
+    color: #616161;
+    font-size: 14px;
+    line-height: 1.8;
+    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-description {
+    margin: 0 0 16px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 0 8px 16px;
+}
+
+.footer-social li:first-child {
+    margin: 0;
+}
+
+.footer-social a,
+.footer-social a:hover,
+.footer-social a:visited {
+    color: rgb(33, 33, 33);
+    text-decoration: none;
 }
