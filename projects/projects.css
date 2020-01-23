@@ -333,9 +333,10 @@ body {
 }
 
 #tag {
-    font-size: 16px;
+    background: #FAFAFA;
+    font-size: 14px;
     padding: 3px;
-    border: 1px solid #1a73e8;
+    border: 1px solid #BDBDBD;
     border-radius: 5px;
 }
 
@@ -384,7 +385,7 @@ Footer
 */
 footer {
     padding: 32px 0 32px;
-    position: fixed;
+    position: relative;
 
     background: #eceff1;
     color: #616161;
