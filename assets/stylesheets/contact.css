@@ -126,9 +126,9 @@ html {
 
 
 /*
-  ========================================
-  Reusable Layouts (Grid, Columns)
-  ========================================
+    ========================================
+    Reusable Layouts (Grid, Columns)
+    ========================================
 */
 /* Add spacing to accommodate spacing on end of columns with edge of page */
 .grid,
@@ -154,9 +154,9 @@ html {
 
 
 /*
-  ========================================
-  Rows
-  ========================================
+    ========================================
+    Rows
+    ========================================
 */
 .row,
 .row-alt {
@@ -332,52 +332,30 @@ body {
     line-height: 30px;
 }
 
-.socials div {
-    font-size: 48px;
+.socials {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    border: 2px solid #000;
-    width: 45%;
-    margin: 10px;
-    display: inline-block;
 }
 
-
-/*
-  ========================================
-  Buttons
-  ========================================
-*/
-.button {
-    color: rgb(33, 33, 33);
-    text-align: center;
-    padding: 8px;
-    margin-right: 10px;
+svg {
+    display: block;
     width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
 
-    border: 0.12em solid rgb(32, 32, 32);
-    border-radius: 4px;
+.socials li {
+    font-size: 20px;
     display: inline-block;
+    margin: 20px;
 }
 
-.button:hover {
-    color: #fff;
-    text-align: center;
-    background: #1a73e8;
-    width: 100px;
-
-    border: 0.12em solid rgb(32, 32, 32);
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button:visited {
+.socials a {
     color: rgb(33, 33, 33);
 }
 
-.button:visited:hover {
-    color: #eceff1;
+.socials a:hover {
+    color: #1a73e8;
+    fill: #1a73e8;
 }
 
 

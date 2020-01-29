@@ -413,7 +413,7 @@ Footer
 */
 footer {
     padding: 32px 0 32px;
-    position: relative;
+    position: fixed;
 
     background: #eceff1;
     color: #616161;
