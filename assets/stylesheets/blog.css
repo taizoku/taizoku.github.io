@@ -269,6 +269,15 @@ header {
     text-decoration: none;
 }
 
+.post-header .publish-date {
+    font-size: 17px;
+    color: #757575;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.post-header {
+    line-height: 1.6;
+}
 
 /*
     ===============================
@@ -342,48 +351,38 @@ dd {
     margin-bottom: 24px;
 }
 
+p {
+    margin: 17px 0;
+}
+
+.jmp {
+    font-size: 14px;
+}
+
+.post-footer {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.labels-caption {
+    font-weight: 600;
+}
+
 
 /*
-  ========================================
-  Buttons
-  ========================================
+    ===============================
+    Sidebar (Aside)
+    ===============================
 */
-.button {
-    color: rgb(33, 33, 33);
-    text-align: center;
-    padding: 8px;
-    margin-right: 10px;
-    width: 100px;
-
-    border: 0.12em solid rgb(32, 32, 32);
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.button:hover {
-    color: #fff;
-    text-align: center;
-    background: #1a73e8;
-    width: 100px;
-
-    border: 0.12em solid rgb(32, 32, 32);
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button:visited {
-    color: rgb(33, 33, 33);
-}
-
-.button:visited:hover {
-    color: #eceff1;
+.col-right {
+    float: right;
 }
 
 
 /*
-===============================
-Footer
-===============================
+    ===============================
+    Footer
+    ===============================
 */
 footer {
     padding: 32px 0 32px;

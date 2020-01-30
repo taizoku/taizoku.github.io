@@ -10,8 +10,10 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="container group">
-        <!-- Logo (ryotokuro) -->
+        
+        <!-- Logo -->
         <h1 class="logo">
             <a href="/">ryotokuro</a>
         </h1>
@@ -32,22 +34,42 @@
         </nav>
     </header>
 
+    <!-- Main Section -->
     <article class="main container">
-        <div>
-            <h2 class="title">Blog</h2>
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">Blog</h2>
             
-            <section class="description">
+            <section class="heading-desc">
                 <p>
                     This section is composed of my thoughts and ideas on topics that I am interested in.<br>
                     Acting as an archive of exploration and self-reflection, I hope blogging will further my knowledge and understanding of the world around me.
                 </p>
             </section>
             
+            <!-- Content Wrapper -->
             <section class="posts">
-                <dl>
-                    <dt><h3><a href="/blog/design/1">The Importance of Visibility and Feedback in Design</a></h3></dt>
-                    <dd>Modern design is riddled with poor invisible cues, making it extremely frustrating. As such, in our day-to-day, we encounter many man-made obstacles due to "crappy design".</dd>
-                </dl>
+                <h3>
+                    <a href="/blog/design/1" itemprop="url" title="The Importance of Visibility and Feedback in Design">The Importance of Visibility and Feedback in Design</a>
+                </h3>
+                <div class="post-header">
+                    <div class="published">
+                        <span class="publish-date" itemprop="datePublished">
+                            Thursday, January 30, 2020
+                        </span>
+                    </div>
+                </div>
+                <p>
+                    Modern design is riddled with poor invisible cues, making it extremely frustrating. As such, in our day-to-day, we encounter many man-made obstacles due to "crappy design".
+                </p>
+                <div class="jump-link">
+                    <a class="jmp">Read more »</a>
+                </div>
+                
+                <div class="post-footer">
+                    <span class="labels-caption">Labels: </span>
+                    <span class="labels">Design</span>
+                </div>
                 
                 <dl>
                     <dt><h3><a href="/blog/japanese/1">The Rules of Japanese</a></h3></dt>
@@ -58,8 +80,31 @@
                     <dt><h3><a href="/blog/ai/1">Learning to Learn a Machine</a></h3></dt>
                     <dd>Machines are stupid. However, they can be made to be great - even greater than humans. Unbound by the limitations of the human idea, artificial intelligence is an incredibly brilliant field with a great deal to...</dd>
                 </dl>
+                
+                <dl>
+                    <dt><h3><a href="/blog/ai/1">Affordance In Virtual Reality</a></h3></dt>
+                    <dd>Augmented Reality unlocks a new universe for us to explore in the modern age, with technology enabling us to alter our current lifestyle, or immerse us in a new environment. Virtual Reality provides a "free world" in which the space provided becomes the playground of the player.</dd>
+                </dl>
+                
+                <dl>
+                    <dt><h3><a href="/blog/ai/1">Design in Technology (Lessons from Chernobyl)</a></h3></dt>
+                    <dd>A manmade disaster of nuclear scale that completely wiped an entire city from life and still has rippling effects to this day, revealed the incredibly dangerous nature of modern technological warfare. By diving into the events that unfolded leading up to the catastrophe, there are some important lessons we can learn about the critical role of design in technology.</dd>
+                </dl>
+                
+                
+                
+                
             </section>
         </div>
+        <aside class="col-right">
+            <section id="search-box">
+                <input type="text" title="Search blog..." placeholder="Search blog...">
+            </section>
+            
+            <div id="label-widget">
+            
+            </div>
+        </aside>
     </article>
 
     <footer>
@@ -69,13 +114,21 @@
             </p>
 
             <ul class="footer-social">
-                <li><a href="https://github.com/ryotokuro">GitHub</a></li>
+                <li>
+                    <a href="https://github.com/ryotokuro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
                 /
-                <li><a href="https://linkedin.com/in/taiyue">LinkedIn</a></li>
+                <li>
+                    <a href="https://linkedin.com/in/taiyue" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
                 /
-                <li><a href="https://twitter.com/aphdo">Twitter</a></li>
+                <li>
+                    <a href="https://twitter.com/aphdo" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
                 /
-                <li><a href="mailto:ryotokuro@gmail.com">Email</a></li>
+                <li>
+                    <a href="mailto:ryotokuro@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+                </li>
             </ul>
 
             <div>
