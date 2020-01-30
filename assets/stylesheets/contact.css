@@ -340,13 +340,13 @@ svg {
     display: block;
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .socials li {
     font-size: 20px;
     display: inline-block;
-    margin: 20px;
+    margin: 0 24px;
 }
 
 .socials a {
