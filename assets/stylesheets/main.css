@@ -1,3 +1,23 @@
+/*
+    # Base
+      – normalize.css
+      – layout.css
+      – typography.css
+
+    # Components
+      – alerts.css
+      – buttons.css
+      – forms.css
+      – list.css
+      – nav.css
+      – tables.css
+
+    # Modules
+      – aside.css
+      – footer.css
+      – header.css
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -370,46 +390,44 @@ body {
   Buttons
   ========================================
 */
-.button {
+button a {
     color: rgb(33, 33, 33);
     text-align: center;
     padding: 8px;
     margin-right: 10px;
     width: 100px;
-
-    border: 0.12em solid rgb(32, 32, 32);
+    
     border-radius: 4px;
     display: inline-block;
 }
 
-.button:last-child {
+.button a:last-child {
     margin-right: 0;
 }
 
-.button:hover {
+button a:hover {
     color: #fff;
     text-align: center;
     background: #1a73e8;
     width: 100px;
 
-    border: 0.12em solid rgb(32, 32, 32);
     border-radius: 4px;
     cursor: pointer;
 }
 
-.button:visited {
+button a:visited {
     color: rgb(33, 33, 33);
 }
 
-.button:visited:hover {
+button a:visited:hover {
     color: #eceff1;
 }
 
 
 /*
-===============================
-Footer
-===============================
+    ===============================
+    Footer
+    ===============================
 */
 footer {
     padding: 32px 0 32px;
