@@ -390,23 +390,24 @@ body {
   Buttons
   ========================================
 */
-button a {
+button {
     color: rgb(33, 33, 33);
     text-align: center;
     padding: 8px;
     margin-right: 10px;
+    height: 60px;
     width: 100px;
     
     border-radius: 4px;
     display: inline-block;
+    background: #fff;
 }
 
-.button a:last-child {
+button:last-child {
     margin-right: 0;
 }
 
-button a:hover {
-    color: #fff;
+button:hover {
     text-align: center;
     background: #1a73e8;
     width: 100px;
@@ -414,15 +415,6 @@ button a:hover {
     border-radius: 4px;
     cursor: pointer;
 }
-
-button a:visited {
-    color: rgb(33, 33, 33);
-}
-
-button a:visited:hover {
-    color: #eceff1;
-}
-
 
 /*
     ===============================
