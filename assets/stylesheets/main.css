@@ -1,23 +1,39 @@
 /*
-    # Base
-      – normalize.css
-      – layout.css
-      – typography.css
+    CSS FILE STRUCTURE
+    ------------------
+    1. Base
+        a) Normalise
+        b) Layout
+        c) Typography
 
-    # Components
-      – alerts.css
-      – buttons.css
-      – forms.css
-      – list.css
-      – nav.css
-      – tables.css
+    2. Components
+        x alerts.css
+        a) Buttons
+        x forms.css
+        x list.css
+        b) Navigation
+        c) Tables
 
-    # Modules
-      – aside.css
-      – footer.css
-      – header.css
+    3. Modules
+        a) Header
+        b) Body
+        c) Footer
 */
 
+/*
+--------------------------------
+    1. BASE
+--------------------------------
+*/
+
+/*
+    ===========================================
+    a) Normalise (Set defaults for everything)
+    ===========================================
+*/
+/* 
+    HTML5 Reset for older browsers
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -39,7 +55,6 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -81,7 +96,6 @@ table {
     border-spacing: 0;
 }
 
-
 /*
     ===============================
     Grid
@@ -94,7 +108,6 @@ table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 /* 
     ========================================
@@ -130,25 +143,16 @@ table {
     *zoom: 1;
 }
 
-
 /*
-    ===============================
-    Global
-    ===============================
+    ======================================
+    b) Layouts (Set up structure of page)
+    ======================================
 */
-html {
-    color: rgb(33, 33, 33);
-    color: #616161;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-}
-
 
 /*
-  ========================================
-  Reusable Layouts (Grid, Columns)
-  ========================================
+    =================================
+    Reusable Layouts (Grid, Columns)
+    =================================
 */
 /* Add spacing to accommodate spacing on end of columns with edge of page */
 .grid,
@@ -198,11 +202,28 @@ html {
     padding: 44px 0 22px 0;
 }
 
+/*
+    ========
+    Globals
+    ========
+*/
+html {
+    color: rgb(33, 33, 33);
+    color: #616161;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section {
+    padding: 32px 0 32px;
+}
+
 
 /*
-    ===============================
-    Typography
-    ===============================
+    ==============
+    c) Typography
+    ==============
 */
 h1,
 h2,
@@ -245,9 +266,9 @@ em {
 
 
 /*
-    ===============================
+    ================
     Links (Anchors)
-    ===============================
+    ================
 */
 a,
 a:hover {
@@ -264,37 +285,45 @@ a:visited {
 
 
 /*
-    ===============================
-    Header
-    ===============================
+--------------------------------
+    2. COMPONENTS
+--------------------------------
 */
-header {
-    background: rgb(33, 33, 33);
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
-    min-width: 100%;
-    padding: 32px 32px 0 32px;
+
+/*
+  ===========
+  a) Buttons
+  ===========
+*/
+button {
+    display: inline-block;
+    
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    
+    color: rgb(33, 33, 33);
+    background-color: #fff;
+    
+    padding: 8px;
+    height: 50px;
+    width: 100px;
+    
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 4px;
 }
 
-.logo {
-    float: left;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
-}
-
-.logo a,
-.logo a:hover,
-.logo a:visited {
+button:hover {
     color: #fff;
-    text-decoration: none;
+    background: #1a73e8;
+    cursor: pointer;
 }
 
 
 /*
-    ===============================
-    Navigation
-    ===============================
+    ==============
+    b) Navigation
+    ==============
 */
 .top-nav {
     text-transform: lowercase;
@@ -338,42 +367,67 @@ a:hover:after {
     left: 0;
 }
 
+/*
+--------------------------------
+    3. MODULES
+--------------------------------
+*/
 
 /*
-    ===============================
-    Home (Body)
-    ===============================
+    ==========
+    a) Header
+    ==========
+*/
+header {
+    background: rgb(33, 33, 33);
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    padding: 32px 32px 0 32px;
+}
+
+.logo {
+    float: left;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.logo a,
+.logo a:hover,
+.logo a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+    ===============
+    b) Main (Body)
+    ===============
 */
 body {
     background: #fff;
 }
 
 .main {
-    padding: 40px 0 40px;
+    margin-top: 96px;
     line-height: 30px;
 }
 
-.description {
-    padding-bottom: 16px;
-}
-
 .technology {
-    padding-bottom: 32px;
     border-bottom: 0.12rem solid #eceff1;
 }
 
 .design {
-    padding: 32px 0 32px;
     border-bottom: 0.12rem solid #eceff1;
 }
 
 .technology li,
 .design li {
     display: inline-block;
-}
-
-.contact {
-    padding: 32px 0 32px;
 }
 
 .links .btn {
@@ -384,46 +438,14 @@ body {
     padding-bottom: 0;
 }
 
-
 /*
-  ========================================
-  Buttons
-  ========================================
-*/
-button {
-    color: rgb(33, 33, 33);
-    text-align: center;
-    padding: 8px;
-    margin-right: 10px;
-    height: 60px;
-    width: 100px;
-    
-    border-radius: 4px;
-    display: inline-block;
-    background: #fff;
-}
-
-button:last-child {
-    margin-right: 0;
-}
-
-button:hover {
-    text-align: center;
-    background: #1a73e8;
-    width: 100px;
-
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/*
-    ===============================
-    Footer
-    ===============================
+    ==========
+    c) Footer
+    ==========
 */
 footer {
     padding: 32px 0 32px;
-    position: fixed;
+    position: absolute;
 
     background: #eceff1;
     color: #616161;
