@@ -303,11 +303,11 @@ button {
     text-align: center;
     
     color: rgb(33, 33, 33);
-    background-color: #fff;
+    background-color: transparent;
     
     padding: 8px;
-    height: 50px;
-    width: 100px;
+    height: 48px;
+    width: 96px;
     
     border: 2px solid rgb(33, 33, 33);
     border-radius: 4px;
