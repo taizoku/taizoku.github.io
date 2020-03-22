@@ -212,7 +212,7 @@ table {
 html {
     color: rgb(33, 33, 33);
     color: #616161;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-size: 62.5%;
     font-weight: 400;
@@ -241,6 +241,7 @@ h1 {
     color: #1a73e8;
     font-size: 60px;
     font-size: 6.0rem;
+    font-weight: 500;
     
     margin: 0 0 16px;
     line-height: 72px;
@@ -250,6 +251,7 @@ h2 {
     color: rgb(33, 33, 33);
     font-size: 32px;
     font-size: 3.2rem;
+    font-weight: 500;
 
     margin: 0 0 8px;
     line-height: 48px;
@@ -399,20 +401,16 @@ header {
     padding: 32px 32px 0 32px;
 }
 
-.logo {
-    float: left;
-    font-size: 20px;
-    font-size: 2.0rem;
-    
-    line-height: 24px;
-    margin: 0;
-}
-
 .logo a,
 .logo a:hover,
 .logo a:visited {
+    float: left;
+    margin: 0;
+    
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 /*
@@ -424,11 +422,6 @@ body {
     background: #fff;
     font-size: 20px;
     font-size: 2.0rem;
-}
-
-.main {
-    margin-top: 96px;
-    
     line-height: 30px;
 }
 
