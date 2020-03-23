@@ -219,7 +219,7 @@ html {
 }
 
 section {
-    padding: 32px 0 32px;
+    padding: 32px;
 }
 
 
@@ -228,22 +228,15 @@ section {
     c) Typography
     ==============
 */
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    margin-bottom: 22px;
+h1, h2, h3 {
+    font-weight: 500;
+    margin: 0 0 8px;
 }
 
 h1 {
     color: #1a73e8;
     font-size: 60px;
     font-size: 6.0rem;
-    font-weight: 500;
-    
-    margin: 0 0 16px;
     line-height: 72px;
 }
 
@@ -251,9 +244,6 @@ h2 {
     color: rgb(33, 33, 33);
     font-size: 32px;
     font-size: 3.2rem;
-    font-weight: 500;
-
-    margin: 0 0 8px;
     line-height: 48px;
 }
 
@@ -390,6 +380,8 @@ a:hover:after {
 header {
     background: rgb(33, 33, 33);
     font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-size: 2.3rem;
     
     position: fixed;
     top: 0;
@@ -407,8 +399,6 @@ header {
     
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    font-size: 2.0rem;
 }
 
 /*
@@ -424,15 +414,20 @@ body {
 }
 
 main {
-    margin-top: 84px;
+    margin-top: 94px;
+}
+
+.intro {
+    padding-top: 48px;
+    padding-bottom: 0;
 }
 
 .technology {
-    border-bottom: 0.12rem solid #eceff1;
+    border-bottom: 1.5px solid #eceff1;
 }
 
 .design {
-    border-bottom: 0.12rem solid #eceff1;
+    border-bottom: 1.5px solid #eceff1;
 }
 
 .technology li,
