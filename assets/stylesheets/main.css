@@ -129,17 +129,17 @@ table {
     Clearfix
     ========================================
 */
-.group:before,
-.group:after {
+.clearfix:before,
+.clearfix:after {
     content: "";
     display: table;
 }
 
-.group:after {
+.clearfix:after {
     clear: both;
 }
 
-.group {
+.clearfix {
     clear: both;
     *zoom: 1;
 }
@@ -335,12 +335,9 @@ button:hover {
     b) Navigation
     ==============
 */
-.top-nav {
-    text-transform: lowercase;
-}
-
 .nav {
     text-align: right;
+    text-transform: lowercase;
 }
 
 .nav li {
@@ -392,11 +389,13 @@ a:hover:after {
 */
 header {
     background: rgb(33, 33, 33);
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
     
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+
     min-width: 100%;
     padding: 32px 32px 0 32px;
 }
@@ -405,7 +404,6 @@ header {
 .logo a:hover,
 .logo a:visited {
     float: left;
-    margin: 0;
     
     color: #fff;
     text-decoration: none;
@@ -423,6 +421,10 @@ body {
     font-size: 20px;
     font-size: 2.0rem;
     line-height: 30px;
+}
+
+main {
+    margin-top: 84px;
 }
 
 .technology {
