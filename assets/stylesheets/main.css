@@ -1,36 +1,3 @@
-/*
-    CSS FILE STRUCTURE
-    ------------------
-    1. Base
-        a) Normalise
-        b) Layout
-        c) Typography
-
-    2. Components
-        x alerts.css
-        a) Buttons
-        x forms.css
-        x list.css
-        b) Navigation
-        c) Tables
-
-    3. Modules
-        a) Header
-        b) Body
-        c) Footer
-*/
-
-/*
---------------------------------
-    1. BASE
---------------------------------
-*/
-
-/*
-    ===========================================
-    a) Normalise (Set defaults for everything)
-    ===========================================
-*/
 /* 
     HTML5 Reset for older browsers
 */
@@ -319,10 +286,44 @@ button:hover {
     cursor: pointer;
 }
 
+/*
+--------------------------------
+    3. MODULES
+--------------------------------
+*/
+
+/*
+    ==========
+    a) Header
+    ==========
+*/
+header {
+    background: rgb(33, 33, 33);
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-size: 2.3rem;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    min-width: 100%;
+    padding: 32px 32px 0 32px;
+}
+
+.logo a,
+.logo a:hover,
+.logo a:visited {
+    float: left;
+    
+    color: #fff;
+    text-decoration: none;
+}
 
 /*
     ==============
-    b) Navigation
+    Navigation
     ==============
 */
 .nav {
@@ -364,41 +365,6 @@ button:hover {
 a:hover:after {
     width: 100%;
     left: 0;
-}
-
-/*
---------------------------------
-    3. MODULES
---------------------------------
-*/
-
-/*
-    ==========
-    a) Header
-    ==========
-*/
-header {
-    background: rgb(33, 33, 33);
-    font-family: 'Inconsolata', monospace;
-    font-size: 20px;
-    font-size: 2.3rem;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    min-width: 100%;
-    padding: 32px 32px 0 32px;
-}
-
-.logo a,
-.logo a:hover,
-.logo a:visited {
-    float: left;
-    
-    color: #fff;
-    text-decoration: none;
 }
 
 /*
