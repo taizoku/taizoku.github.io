@@ -6,11 +6,77 @@
     <meta charset="utf-8">
     <title>ryotokuro: home</title>  
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
+    <link rel="icon" href="/assets/vectors/logo.svg">
+    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        var nav = $('nav');
+        var line = $('<nav />').addClass('line');
+
+        line.appendTo(nav);
+
+        var active = nav.find('.active');
+        var pos = 0;
+        var wid = 0;
+
+        if(active.length) {
+          pos = active.position().left;
+          wid = active.width();
+          line.css({
+            left: pos,
+            width: wid
+          });
+        }
+
+        nav.find('ul li a').click(function(e) {
+          e.preventDefault();
+          if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+
+            nav.addClass('animate');
+
+            var _this = $(this);
+
+            nav.find('ul li').removeClass('active');
+
+            var position = _this.parent().position();
+            var width = _this.parent().width();
+
+            if(position.left >= pos) {
+              line.animate({
+                width: ((position.left - pos) + width)
+              }, 300, function() {
+                line.animate({
+                  width: width,
+                  left: position.left
+                }, 150, function() {
+                  nav.removeClass('animate');
+                });
+                _this.parent().addClass('active');
+              });
+            } else {
+              line.animate({
+                left: position.left,
+                width: ((pos - position.left) + wid)
+              }, 300, function() {
+                line.animate({
+                  width: width
+                }, 150, function() {
+                  nav.removeClass('animate');
+                });
+                _this.parent().addClass('active');
+              });
+            }
+
+            pos = position.left;
+            wid = width;
+          }
+        });
+    </script>
 </head>
 
 <body>
@@ -18,7 +84,10 @@
     <header class="container clearfix">
         <!-- Logo (ryotokuro) -->
         <span class="logo">
-            <a href="/">./ryotokuro</a>
+            <a href="/">
+                <img src="assets/vectors/logo.svg">
+                ryotokuro
+            </a>
         </span>
 
 
@@ -67,7 +136,7 @@
             </section>
 
             <section class="design">
-                <h2>What I use to design</h2>
+                <h2>I also design using...</h2>
                 
                 <ul>
                     <li>Figma</li>,
@@ -99,7 +168,7 @@
                         </button>
                     </a><!--
 
-                    --><a href="mailto:careers.tail@gmail.com" target="_blank" rel="noopener noreferrer">
+                    --><a href="mailto:careers.tai@gmail.com" target="_blank" rel="noopener noreferrer">
                         <button>
                             Email
                         </button>
@@ -130,7 +199,7 @@
                 </li>
                 /
                 <li>
-                    <a href="mailto:careers.tail@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+                    <a href="mailto:careers.tai@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
                 </li>
             </ul>
 
