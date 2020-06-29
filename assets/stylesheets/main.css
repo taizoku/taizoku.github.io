@@ -487,6 +487,24 @@ main {
     padding-bottom: 0;
 }
 
+.contact {
+    vertical-align: middle;
+}
+
+a img {
+    display: inline-block;
+    width: 50px;
+    margin-right: 20px;
+}
+
+a img:hover {
+    
+}
+
+#linkedin {
+    width: 200px;
+}
+
 /*
     ==========
     c) Footer
