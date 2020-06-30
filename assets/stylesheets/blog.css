@@ -169,7 +169,7 @@ table {
     background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
     padding: 44px 0 22px 0;
-}
+}   
 
 /*
     ========
@@ -177,9 +177,9 @@ table {
     ========
 */
 html {
+    font-family: 'Inconsolata', monospace;
     color: rgb(33, 33, 33);
     color: #616161;
-    font-family: 'Inter', 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-size: 62.5%;
     font-weight: 400;
@@ -195,16 +195,17 @@ section {
     c) Typography
     ==============
 */
-h1, h2, h3 {
-    font-weight: 500;
-    margin: 0 0 8px;
-}
-
 h1 {
     color: #1a73e8;
     font-size: 48px;
     font-size: 4.8rem;
+    font-weight: 550;
     line-height: 72px;
+}
+
+h2, h3 {
+    font-weight: 500;
+    margin: 0 0 8px;
 }
 
 h2 {
@@ -248,47 +249,9 @@ a:visited {
     cursor: pointer;
 }
 
-
 /*
 --------------------------------
-    2. COMPONENTS
---------------------------------
-*/
-
-/*
-  ===========
-  a) Buttons
-  ===========
-*/
-button {
-    display: inline-block;
-    
-    font-family: inherit;
-    font-size: 16px;
-    font-size: 1.6rem;
-    
-    text-align: center;
-    
-    color: rgb(33, 33, 33);
-    background-color: transparent;
-    
-    padding: 8px;
-    height: 48px;
-    width: 96px;
-    
-    border: 2px solid rgb(33, 33, 33);
-    border-radius: 4px;
-}
-
-button:hover {
-    color: #fff;
-    background: #1a73e8;
-    cursor: pointer;
-}
-
-/*
---------------------------------
-    3. MODULES
+    2. MODULES
 --------------------------------
 */
 
@@ -298,11 +261,9 @@ button:hover {
     ==========
 */
 header {
-    background: rgb(33, 33, 33);
-    font-family: 'Inconsolata', monospace;
     font-size: 20px;
     font-size: 2.3rem;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -312,13 +273,17 @@ header {
     padding: 32px 32px 0 32px;
 }
 
-.logo a,
-.logo a:hover,
-.logo a:visited {
+.logo,
+.logo:hover,
+.logo:visited {
     float: left;
-    
-    color: #fff;
+
+    color: #000;
     text-decoration: none;
+}
+
+.logo img {
+    width: 20px;
 }
 
 /*
@@ -334,7 +299,7 @@ header {
 .nav li {
     position: relative;
     padding: 0 16px 32px 16px;
-    
+
     display: inline-block;
     vertical-align: top;
 }
@@ -344,7 +309,7 @@ header {
 }
 
 .nav a {
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 
@@ -354,10 +319,10 @@ header {
     content: "";
     display: block;
     height: 3px;
-    
+
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -383,34 +348,23 @@ main {
     margin-top: 94px;
 }
 
-#tech, #design, #languages, #problems, #security {
-    border-radius: 8px;
-    margin: 32px 0 32px;
+.spaces div {
+    display: inline-block;
+    margin: 0 auto;
+    width: 150px;
 }
 
-#tech {
-    border: 2px burlywood solid;
+span {
+    font-size: 2.3rem;
+    font-weight: 550;
 }
 
-#design {
-    border: 2px green solid;
+a img {
+    width: 90%;
 }
 
-#languages {
-    border: 2px orange solid;
-}
-
-#problems {
-    border: 2px blue solid;
-}
-
-#security {
-    border: 2px purple solid;
-    margin-bottom: 32px;
-}
-
-.main section:last-child {
-    padding-bottom: 0;
+a img:hover {
+    
 }
 
 /*
@@ -419,7 +373,7 @@ main {
     ==========
 */
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
