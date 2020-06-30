@@ -117,13 +117,13 @@ table {
     ===============================
 */
 html {
+    font-family: 'Inconsolata', monospace;
     color: rgb(33, 33, 33);
     color: #616161;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 20px;
+    font-size: 62.5%;
     font-weight: 400;
 }
-
 
 /*
   ========================================
@@ -194,17 +194,21 @@ p {
 
 h1 {
     color: #1a73e8;
-    font-size: 60px;
-
-    margin: 0 0 16px;
+    font-size: 48px;
+    font-size: 4.8rem;
+    font-weight: 550;
     line-height: 72px;
+}
+
+h2, h3 {
+    font-weight: 500;
+    margin: 0 0 8px;
 }
 
 h2 {
     color: rgb(33, 33, 33);
     font-size: 32px;
-
-    margin: 0 0 8px;
+    font-size: 3.2rem;
     line-height: 48px;
 }
 
@@ -243,50 +247,50 @@ a:visited {
 
 
 /*
-    ===============================
-    Header
-    ===============================
+    ==========
+    a) Header
+    ==========
 */
 header {
-    background: rgb(33, 33, 33);
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 2.3rem;
+
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
     min-width: 100%;
     padding: 32px 32px 0 32px;
 }
 
-.logo {
+.logo,
+.logo:hover,
+.logo:visited {
     float: left;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
-}
-
-.logo a,
-.logo a:hover,
-.logo a:visited {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
-
-/*
-    ===============================
-    Navigation
-    ===============================
-*/
-.top-nav {
-    text-transform: lowercase;
+.logo img {
+    margin-right: 0;
+    width: 20px;
 }
 
+/*
+    ==============
+    Navigation
+    ==============
+*/
 .nav {
     text-align: right;
+    text-transform: lowercase;
 }
 
 .nav li {
     position: relative;
     padding: 0 16px 32px 16px;
+
     display: inline-block;
     vertical-align: top;
 }
@@ -296,7 +300,7 @@ header {
 }
 
 .nav a {
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 
@@ -306,9 +310,10 @@ header {
     content: "";
     display: block;
     height: 3px;
+
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -328,9 +333,36 @@ body {
     background: #fff;
 }
 
-.main {
-    padding: 40px 0 40px;
+main {
+    margin: 94px 0 94px 0;
+    margin: 9.4rem 0 9.4rem 0;
     line-height: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+td {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 32px;
 }
 
 #tag {
@@ -418,4 +450,8 @@ footer {
 .footer-social a:visited {
     color: rgb(33, 33, 33);
     text-decoration: none;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
 }
