@@ -89,6 +89,8 @@ table {
     /* center content */
     width: 840px;
     width: 84.0rem;
+    width: 640px;
+    width: 64.rem;
     /* fixed width */
 }
 
@@ -147,32 +149,6 @@ table {
     width: 66.66%;
 }
 
-
-/*
-  ========================================
-  Rows
-  ========================================
-*/
-.row,
-.row-alt {
-    min-width: 840px;
-}
-
-.row {
-    background: #fff;
-    min-width: 840px;
-    padding: 66px 0 44px 0;
-}
-
-.row-alt {
-    background: #cbe2c1;
-    /*backup colour*/
-    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-    padding: 44px 0 22px 0;
-}
-
 /*
     ========
     Globals
@@ -185,6 +161,10 @@ html {
     font-size: 20px;
     font-size: 62.5%;
     font-weight: 400;
+}
+
+section:first-child {
+    padding-top: 0;
 }
 
 section {
@@ -206,8 +186,8 @@ h3 {
 
 h1 {
     color: #1a73e8;
-    font-size: 54px;
-    font-size: 6.0rem;
+    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 550;
     line-height: 72px;
 }
@@ -313,18 +293,19 @@ header {
 
     min-width: 100%;
     padding: 32px 32px 0 32px;
+    padding: 3.2rem 3.2rem 0 3.2rem;
 }
 
 .logo,
 .logo:hover,
 .logo:visited {
     float: left;
-
     color: #000;
     text-decoration: none;
 }
 
 .logo img {
+    margin-right: 0;
     width: 20px;
 }
 
@@ -387,7 +368,8 @@ body {
 }
 
 main {
-    margin-top: 94px;
+    margin: 94px 0 94px 0;
+    margin: 9.4rem 0 9.4rem 0;
 }
 
 .intro {
@@ -475,4 +457,8 @@ footer {
 .footer-social a:visited {
     color: rgb(33, 33, 33);
     text-decoration: none;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
 }
