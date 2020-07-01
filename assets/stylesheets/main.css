@@ -233,47 +233,9 @@ a:visited {
     cursor: pointer;
 }
 
-
 /*
 --------------------------------
-    2. COMPONENTS
---------------------------------
-*/
-
-/*
-  ===========
-  a) Buttons
-  ===========
-*/
-button {
-    display: inline-block;
-
-    font-family: inherit;
-    font-size: 16px;
-    font-size: 1.6rem;
-
-    text-align: center;
-
-    color: rgb(33, 33, 33);
-    background-color: transparent;
-
-    padding: 8px;
-    height: 48px;
-    width: 96px;
-
-    border: 2px solid rgb(33, 33, 33);
-    border-radius: 4px;
-}
-
-button:hover {
-    color: #fff;
-    background: #1a73e8;
-    cursor: pointer;
-}
-
-/*
---------------------------------
-    3. MODULES
+    2. MODULES
 --------------------------------
 */
 
@@ -322,8 +284,7 @@ header {
 .nav li {
     position: relative;
     padding: 0 16px 32px 16px;
-
-    display: inline-block;
+    
     vertical-align: top;
 }
 
@@ -385,8 +346,7 @@ main {
     border-bottom: 1.5px solid #eceff1;
 }
 
-.technology li,
-.design li {
+li {
     display: inline-block;
 }
 
@@ -412,8 +372,8 @@ a img:hover {
     fill
 }
 
-#linkedin {
-    width: 200px;
+#github {
+    width: 100px;
 }
 
 /*
@@ -444,7 +404,6 @@ footer {
 }
 
 .footer-social li {
-    display: inline-block;
     margin: 0 8px 16px;
 }
 
@@ -460,5 +419,11 @@ footer {
 }
 
 @media (max-height:800px){
-	footer { position: static; }
+    html {
+        font-size: 1.6vh;
+    }
+    
+    footer {
+        position: static;
+    }
 }
