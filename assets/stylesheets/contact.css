@@ -422,3 +422,13 @@ footer {
     color: rgb(33, 33, 33);
     text-decoration: none;
 }
+
+@media (max-height:800px){
+	html {
+        font-size: 1.6vh;
+    }
+    
+    footer {
+        position: static;
+    }
+}

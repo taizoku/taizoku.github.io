@@ -453,5 +453,11 @@ footer {
 }
 
 @media (max-height:800px){
-	footer { position: static; }
+	html {
+        font-size: 1.6vh;
+    }
+    
+    footer {
+        position: static;
+    }
 }
