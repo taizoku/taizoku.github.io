@@ -281,15 +281,24 @@ header {
     text-transform: lowercase;
 }
 
-.nav li {
-    position: relative;
-    padding: 0 16px 32px 16px;
-    
-    vertical-align: top;
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.nav li:last-child {
-    padding-right: 0;
+li {
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+    margin: 0 36px 0 0;
+    transition: all 0.4s ease;
+}
+
+.nav li a:hover, footer li:hover {
+    color: #1a73e8;
 }
 
 .nav a {
@@ -297,16 +306,21 @@ header {
     cursor: pointer;
 }
 
+.nav a:active {
+    opacity: 0.8;
+}
+
 .nav a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
     display: block;
-    height: 3px;
+    height: 2px;
+    height: 0.2rem;
 
-    left: 50%;
+    left: 20%;
     position: absolute;
-    background: #000;
+    background: #1a73e8;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -314,6 +328,11 @@ header {
 a:hover:after {
     width: 100%;
     left: 0;
+}
+
+li:last-child {
+    padding-right: 0;
+    margin-right: 0;
 }
 
 /*
@@ -333,47 +352,43 @@ main {
     margin: 9.4rem 0 9.4rem 0;
 }
 
+/* Introduction */
 .intro {
     padding-top: 48px;
     padding-bottom: 0;
 }
 
+/* Languages */
 .technology {
     border-bottom: 1.5px solid #eceff1;
 }
 
+/* Design */
 .design {
     border-bottom: 1.5px solid #eceff1;
 }
 
-li {
-    display: inline-block;
-}
-
-.links .btn {
-    margin-right: 10px;
-}
-
+/* Contact */
 .main section:last-child {
     padding-bottom: 0;
 }
 
-.contact {
-    vertical-align: middle;
-}
-
 a img {
-    display: inline-block;
     width: 50px;
-    margin-right: 20px;
-}
-
-a img:hover {
-    fill
 }
 
 #github {
     width: 100px;
+}
+
+.links a {
+    margin-right: 20px;
+    margin-right: 2.0rem;
+}
+
+/* might only work with pure css background changes*/
+a img:hover {
+    transition: all 0.4s ease-in-out;
 }
 
 /*
