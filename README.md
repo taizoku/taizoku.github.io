@@ -1,13 +1,8 @@
-# Portfolio Website (ryotokuro.github.io)
-This is a repository for the code used to design and actualise my portfolio website.
-My portfolio is hosted on GitHub (as you can probably see).
+# Portfolio Website (https://ryotokuro.github.io)
+This repo contains the source code for my portfolio on the Internet.
+My website is hosted on GitHub through GitHub Pages.
 
-The languages that I will probably be looking to use are:
+The website is made using:
 * HTML
 * CSS
-* Java (JS, ReactJS, NodeJS)
-
-I would also like to perhaps experiment a bit with other frameworks like Flask, etc.
-
-You can also visit the redirect using http://ryotokuro.co/ to watch me slowly figure things out :)
-Website link will expire soon want to update this :(
+* JavaScript (Vanilla JS, ReactJS/NodeJS Frameworks)
