@@ -89,11 +89,8 @@ table {
     /* center content */
     width: 840px;
     width: 84.0rem;
-    width: 640px;
-    width: 64.rem;
     /* fixed width */
 }
-
 
 /*
     ========================================
@@ -358,14 +355,10 @@ main {
     padding-bottom: 0;
 }
 
-/* Languages */
-.technology {
-    border-bottom: 1.5px solid #eceff1;
-}
-
-/* Design */
-.design {
-    border-bottom: 1.5px solid #eceff1;
+#border {
+    width: 640px;
+    border-bottom: 2px dashed #eceff1;
+    border-bottom: 0.2rem dashed #eceff1;
 }
 
 /* Contact */
