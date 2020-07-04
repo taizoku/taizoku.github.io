@@ -113,40 +113,6 @@ table {
 }
 
 /*
-    ======================================
-    b) Layouts (Set up structure of page)
-    ======================================
-*/
-
-/*
-    =================================
-    Reusable Layouts (Grid, Columns)
-    =================================
-*/
-/* Add spacing to accommodate spacing on end of columns with edge of page */
-.grid,
-.col-1-3,
-.col-2-3 {
-    padding-left: 15px;
-
-    padding-right: 15px;
-}
-
-.col-1-3,
-.col-2-3 {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.col-1-3 {
-    width: 33.33%;
-}
-
-.col-2-3 {
-    width: 66.66%;
-}
-
-/*
     ========
     Globals
     ========
@@ -201,16 +167,6 @@ h3 {
     font-size: 24px;
     font-size: 2.4rem;
 }
-
-strong {
-    font-weight: 400;
-}
-
-cite,
-em {
-    font-style: italic;
-}
-
 
 /*
     ================
@@ -375,19 +331,21 @@ main {
     margin-right: 8.0rem;
 }
 
-#github {
-    left: 100px;
-}
-
 a img {
     width: 50px;
 }
 
-.off, #gmail:hover .on, #github:hover .on, #linkedin:hover .on {
+.coloured,
+#gmail:hover .black-white,
+#github:hover .black-white,
+#linkedin:hover .black-white {
     opacity: 0;
 }
 
-.on, #gmail:hover .off, #github:hover .off, #linkedin:hover .off {
+.black-white,
+#gmail:hover .coloured,
+#github:hover .coloured,
+#linkedin:hover .coloured {
     opacity: 1;
 }
 
