@@ -366,23 +366,39 @@ main {
     padding-bottom: 0;
 }
 
+.links div {
+    display: inline-block;
+}
+
+.links a {
+    margin-right: 100px;
+    margin-right: 8.0rem;
+}
+
+#github {
+    left: 100px;
+}
+
 a img {
     width: 50px;
 }
 
-#github {
-    width: 100px;
+.off, #gmail:hover .on, #github:hover .on, #linkedin:hover .on {
+    opacity: 0;
 }
 
-.links a {
-    margin-right: 20px;
-    margin-right: 2.0rem;
+.on, #gmail:hover .off, #github:hover .off, #linkedin:hover .off {
+    opacity: 1;
 }
 
-/* might only work with pure css background changes*/
-a img:hover {
-    transition: all 0.4s ease-in-out;
+.links img {
+    position: absolute;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition:    opacity 0.25s ease-in-out;
+    -o-transition:      opacity 0.25s ease-in-out;
+    transition:         opacity 0.25s ease-in-out;
 }
+
 
 /*
     ==========
