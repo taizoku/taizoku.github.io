@@ -314,10 +314,7 @@ main {
     
     text-align: center;
     margin-bottom: 148px;
-}
-
-a img {
-    width: 90%;
+    margin-bottom: 14.8rem;
 }
 
 .coloured,
@@ -343,7 +340,7 @@ a img {
 section img {
     display: flex;
     position: absolute;
-    width: 8%;
+    width: 16rem;
     
     -webkit-transition: opacity 0.25s ease-in-out;
     -moz-transition:    opacity 0.25s ease-in-out;
@@ -357,6 +354,7 @@ section span {
     
     position: relative;
     bottom: -164px;
+    bottom: -16.4rem;
 }
 
 /*
