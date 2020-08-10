@@ -86,10 +86,9 @@ table {
 .container,
 .grid {
     margin: 0 auto;
-    /* center content */
+    /* center content with fixed width */
     width: 840px;
     width: 84.0rem;
-    /* fixed width */
 }
 
 /*
@@ -370,7 +369,7 @@ footer {
     background: #eceff1;
     color: #616161;
     font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 
     line-height: 18px;
 
@@ -400,12 +399,75 @@ footer {
     text-decoration: none;
 }
 
-@media (max-height:800px){
+/*
+    Media Queries
+*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     html {
-        font-size: 1.6vh;
+        font-size: 52%;
+    }
+    
+    .container,
+    .grid {
+        margin: 0 auto;
+        /* center content with fixed width */
+        width: 80%;
+    }
+    
+    .links a {
+        margin-right: 100px;
+        margin-right: 8.0rem;
+        margin-right: 12%;
+    }
+
+    a img {
+        width: 50px;
+        width: 10%;
     }
     
     footer {
-        position: static;
+        padding: 5% 0 5%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 62%;
+    }
+    
+    .container,
+    .grid {
+        margin: 0;
+    }
+    
+    section ul li {
+        font-size: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 72%;
+    }
+    
+    .container,
+    .grid {
+        margin: 0 auto;
+        width: 45%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 62%;
     }
 }

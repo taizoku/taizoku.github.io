@@ -5,4 +5,4 @@ My website is hosted on GitHub through GitHub Pages.
 The website is made using:
 * HTML
 * CSS
-* JavaScript (Vanilla JS, ReactJS/NodeJS Frameworks)
+* Vanilla JavaScript
