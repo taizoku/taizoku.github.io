@@ -1,19 +1,87 @@
 /* 
     HTML5 Reset for older browsers
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -74,66 +142,6 @@ table {
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-}
-
-/* 
-    ========================================
-    Container Class
-    ========================================
-*/
-.container,
-.grid {
-    margin: 0 auto;
-    /* center content with fixed width */
-    width: 840px;
-    width: 84.0rem;
-}
-
-/*
-    ========================================
-    Clearfix
-    ========================================
-*/
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    clear: both;
-    *zoom: 1;
-}
-
-/*
-    ========
-    Globals
-    ========
-*/
-html {
-    font-family: 'Inconsolata', monospace;
-    color: rgb(33, 33, 33);
-    color: #616161;
-    font-size: 20px;
-    font-size: 62.5%;
-    font-weight: 400;
-}
-
-section:first-child {
-    padding-top: 0;
-}
-
-section {
-    padding: 32px;
-}
-
-
 /*
     ==============
     c) Typography
@@ -142,7 +150,7 @@ section {
 h1,
 h2,
 h3 {
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 8px;
 }
 
@@ -156,8 +164,8 @@ h1 {
 
 h2 {
     color: rgb(33, 33, 33);
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 48px;
 }
 
@@ -185,22 +193,33 @@ a:visited {
     cursor: pointer;
 }
 
-/*
---------------------------------
-    2. MODULES
---------------------------------
-*/
+/*---------
+    Body
+----------*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10rem;
 
-/*
-    ==========
-    a) Header
-    ==========
-*/
-header {
+    font-family: 'Inconsolata', monospace;
     font-size: 20px;
-    font-size: 2.3rem;
+    color: rgb(33, 33, 33);
+    color: #616161;
+    text-transform: lowercase;
 
-    position: fixed;
+    background: #fff; 
+}
+
+/*-----------
+    Header
+-------------*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -210,35 +229,13 @@ header {
     padding: 3.2rem 3.2rem 0 3.2rem;
 }
 
-.logo,
-.logo:hover,
-.logo:visited {
-    float: left;
-    color: #000;
-    text-decoration: none;
+.logo {
+    display: none;
 }
 
-.logo img {
-    margin-right: 0;
-    width: 20px;
-}
-
-/*
-    ==============
-    Navigation
-    ==============
-*/
-.nav {
-    text-align: right;
-    text-transform: lowercase;
-}
-
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
+/*--------
+    Nav
+---------*/
 li {
     display: inline-block;
 }
@@ -249,7 +246,8 @@ li {
     transition: all 0.4s ease;
 }
 
-.nav li a:hover, footer li:hover {
+.nav li a:hover,
+footer li:hover {
     color: #1a73e8;
 }
 
@@ -287,36 +285,14 @@ li:last-child {
     margin-right: 0;
 }
 
-/*
-    ===============
-    b) Main (Body)
-    ===============
-*/
-body {
-    background: #fff;
-    font-size: 20px;
-    font-size: 2.0rem;
-    line-height: 30px;
+
+.separator {
+    width: 90%;
+    border-bottom: 5px dashed #eceff1;
+    border-bottom: 0.5rem dashed #eceff1;
+    margin: 0.5em 0;
 }
 
-main {
-    margin: 94px 0 94px 0;
-    margin: 9.4rem 0 9.4rem 0;
-}
-
-/* Introduction */
-.intro {
-    padding-top: 48px;
-    padding-bottom: 0;
-}
-
-#border {
-    width: 640px;
-    border-bottom: 2px dashed #eceff1;
-    border-bottom: 0.2rem dashed #eceff1;
-}
-
-/* Contact */
 .main section:last-child {
     padding-bottom: 0;
 }
@@ -332,6 +308,24 @@ main {
 
 a img {
     width: 50px;
+}
+
+.list {
+    display: flex;
+}
+
+.list ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+.list ul li {
+    
+}
+
+section {
+    margin-bottom: 2em;
 }
 
 .coloured,
@@ -351,9 +345,9 @@ a img {
 .links img {
     position: absolute;
     -webkit-transition: opacity 0.25s ease-in-out;
-    -moz-transition:    opacity 0.25s ease-in-out;
-    -o-transition:      opacity 0.25s ease-in-out;
-    transition:         opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
 }
 
 
@@ -363,8 +357,9 @@ a img {
     ==========
 */
 footer {
+    height: 100vh;
     padding: 32px 0 32px;
-    position: fixed;
+    padding: 3.2rem 0 3.2rem;
 
     background: #eceff1;
     color: #616161;
@@ -407,14 +402,14 @@ footer {
     html {
         font-size: 52%;
     }
-    
+
     .container,
     .grid {
         margin: 0 auto;
         /* center content with fixed width */
         width: 80%;
     }
-    
+
     .links a {
         margin-right: 100px;
         margin-right: 8.0rem;
@@ -425,7 +420,7 @@ footer {
         width: 50px;
         width: 10%;
     }
-    
+
     footer {
         padding: 5% 0 5%;
     }
@@ -436,38 +431,71 @@ footer {
     html {
         font-size: 62%;
     }
-    
+
     .container,
     .grid {
         margin: 0;
     }
-    
+
     section ul li {
         font-size: 20px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     html {
         font-size: 72%;
     }
-    
+
     .container,
     .grid {
         margin: 0 auto;
         width: 45%;
+    }
+
+    .logo,
+    .logo:hover,
+    .logo:visited {
+        display: contents;
+        float: left;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .logo img {
+        margin-right: 0;
+        width: 20px;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     html {
-        font-size: 62%;
+        font-size: 20px;
+        font-size: 2.0rem;
     }
+
+    footer {
+        height: 50vh;
+        padding: 32px 0 32px;
+        position: fixed;
+
+        background: #eceff1;
+        color: #616161;
+        font-size: 14px;
+        font-size: 1.7rem;
+
+        line-height: 18px;
+
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: left;
+    }
+
 }
