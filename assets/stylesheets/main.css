@@ -1,87 +1,7 @@
-/* 
-    HTML5 Reset for older browsers
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/*----------------
+    Reset HTML
+----------------*/
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -127,13 +47,9 @@ table {
     border-spacing: 0;
 }
 
-/*
-
-/*
-    ===============================
-    Grid
-    ===============================
-*/
+/*-------------------
+    Border sizing
+--------------------*/
 *,
 *:before,
 *:after {
@@ -142,16 +58,14 @@ table {
     box-sizing: border-box;
 }
 
-/*
-    ==============
-    c) Typography
-    ==============
-*/
+/*-----------------
+    Typography
+------------------*/
 h1,
 h2,
 h3 {
     font-weight: 600;
-    margin: 0 0 8px;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -201,7 +115,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    padding-top: 10rem;
+    padding-top: 8rem;
 
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
@@ -210,6 +124,30 @@ body {
     text-transform: lowercase;
 
     background: #fff; 
+}
+
+.separator {
+    width: 90%;
+    border-bottom: 5px dashed #eceff1;
+    border-bottom: 0.5rem dashed #eceff1;
+    margin: 0.5em 0;
+}
+
+svg {
+    height: 50px;
+}
+
+.wave-1hkxOo {
+    display: block;
+}
+
+.wave-38scNw {
+    color: #f6f6f6;
+}
+
+section {
+    margin-bottom: 2em;
+    background-color: #fff;
 }
 
 /*-----------
@@ -285,27 +223,6 @@ li:last-child {
     margin-right: 0;
 }
 
-
-.separator {
-    width: 90%;
-    border-bottom: 5px dashed #eceff1;
-    border-bottom: 0.5rem dashed #eceff1;
-    margin: 0.5em 0;
-}
-
-.main section:last-child {
-    padding-bottom: 0;
-}
-
-.links div {
-    display: inline-block;
-}
-
-.links a {
-    margin-right: 100px;
-    margin-right: 8.0rem;
-}
-
 a img {
     width: 50px;
 }
@@ -314,18 +231,10 @@ a img {
     display: flex;
 }
 
-.list ul {
+.list ul:first-child {
     display: flex;
     flex-direction: column;
-    margin-right: 2em;
-}
-
-.list ul li {
-    
-}
-
-section {
-    margin-bottom: 2em;
+    margin-right: 2.4em;
 }
 
 .coloured,
@@ -350,29 +259,27 @@ section {
     transition: opacity 0.25s ease-in-out;
 }
 
-
 /*
     ==========
     c) Footer
     ==========
 */
 footer {
+    display: flex;
     height: 100vh;
-    padding: 32px 0 32px;
-    padding: 3.2rem 0 3.2rem;
+    
+    align-items: center;
 
-    background: #eceff1;
-    color: #616161;
-    font-size: 14px;
-    font-size: 1.7rem;
+    background: #23272a;
+    color: #ffffff;
+    font-size: 24px;
+    font-size: 2.4rem;
 
     line-height: 18px;
 
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    text-align: left;
 }
 
 .footer-description {
@@ -387,27 +294,30 @@ footer {
     margin: 0;
 }
 
-.footer-social a,
-.footer-social a:hover,
-.footer-social a:visited {
-    color: rgb(33, 33, 33);
-    text-decoration: none;
+footer a,
+footer a:visited {
+    color: #ffffff;
 }
 
-/*
+footer a:hover {
+    color: #1a73e8;
+}
+
+/*------------------
     Media Queries
-*/
+-------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html {
         font-size: 52%;
     }
 
-    .container,
-    .grid {
+    .container {
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
-        /* center content with fixed width */
-        width: 80%;
+        width: 90%;
+        
     }
 
     .links a {
@@ -432,8 +342,7 @@ footer {
         font-size: 62%;
     }
 
-    .container,
-    .grid {
+    .container {
         margin: 0;
     }
 
@@ -451,8 +360,7 @@ footer {
         font-size: 72%;
     }
 
-    .container,
-    .grid {
+    .container {
         margin: 0 auto;
         width: 45%;
     }
@@ -474,17 +382,17 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    html {
+    body {
         font-size: 20px;
         font-size: 2.0rem;
     }
 
     footer {
-        height: 50vh;
+        height: 64px;
         padding: 32px 0 32px;
         position: fixed;
 
-        background: #eceff1;
+        background: #23272a;
         color: #616161;
         font-size: 14px;
         font-size: 1.7rem;
