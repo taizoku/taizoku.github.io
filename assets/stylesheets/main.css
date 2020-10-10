@@ -123,32 +123,16 @@ body {
     color: #616161;
     text-transform: lowercase;
 
-    background: #fff; 
+    background: #fff;
 }
 
+/*
 .separator {
     width: 90%;
     border-bottom: 5px dashed #eceff1;
     border-bottom: 0.5rem dashed #eceff1;
     margin: 0.5em 0;
-}
-
-svg {
-    height: 50px;
-}
-
-.wave-1hkxOo {
-    display: block;
-}
-
-.wave-38scNw {
-    color: #f6f6f6;
-}
-
-section {
-    margin-bottom: 2em;
-    background-color: #fff;
-}
+}*/
 
 /*-----------
     Header
@@ -218,6 +202,9 @@ a:hover:after {
     left: 0;
 }
 
+/*--------
+    Main
+---------*/
 li:last-child {
     padding-right: 0;
     margin-right: 0;
@@ -231,11 +218,36 @@ a img {
     display: flex;
 }
 
-.list ul:first-child {
+.list ul {
     display: flex;
     flex-direction: column;
+}
+
+.list ul:first-child {
     margin-right: 2.4em;
 }
+
+.gray {
+    background-color: #f6f6f6;
+}
+
+.wave {
+    color: #f6f6f6;
+    margin-bottom: -0.5rem;
+}
+
+.invertedWave-2Uzmgv {
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin-bottom: 2rem;
+    margin-top: -0.5rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 10rem 0;
+}
+
 
 .coloured,
 #gmail:hover .black-white,
@@ -251,7 +263,14 @@ a img {
     opacity: 1;
 }
 
-.links img {
+.links {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    width: 40%;
+}
+
+.link img {
     position: absolute;
     -webkit-transition: opacity 0.25s ease-in-out;
     -moz-transition: opacity 0.25s ease-in-out;
@@ -265,11 +284,6 @@ a img {
     ==========
 */
 footer {
-    display: flex;
-    height: 100vh;
-    
-    align-items: center;
-
     background: #23272a;
     color: #ffffff;
     font-size: 24px;
@@ -317,7 +331,7 @@ footer a:hover {
         flex-direction: column;
         margin: 0 auto;
         width: 90%;
-        
+
     }
 
     .links a {
@@ -387,10 +401,17 @@ footer a:hover {
         font-size: 2.0rem;
     }
 
+    .links {
+        width: 20%;
+    }
+
     footer {
-        height: 64px;
-        padding: 32px 0 32px;
-        position: fixed;
+        padding: 10rem 0;;
+        
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
 
         background: #23272a;
         color: #616161;
@@ -398,12 +419,5 @@ footer a:hover {
         font-size: 1.7rem;
 
         line-height: 18px;
-
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: left;
     }
-
 }
