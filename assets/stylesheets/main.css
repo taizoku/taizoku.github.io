@@ -114,7 +114,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100vw;
     padding-top: 8rem;
 
     font-family: 'Inconsolata', monospace;
@@ -125,14 +124,6 @@ body {
 
     background: #fff;
 }
-
-/*
-.separator {
-    width: 90%;
-    border-bottom: 5px dashed #eceff1;
-    border-bottom: 0.5rem dashed #eceff1;
-    margin: 0.5em 0;
-}*/
 
 /*-----------
     Header
@@ -168,8 +159,8 @@ li {
     transition: all 0.4s ease;
 }
 
-.nav li a:hover,
-footer li:hover {
+.nav a:hover,
+footer a:hover {
     color: #1a73e8;
 }
 
@@ -202,9 +193,16 @@ a:hover:after {
     left: 0;
 }
 
-/*--------
+/*---------
     Main
----------*/
+----------*/
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
 li:last-child {
     padding-right: 0;
     margin-right: 0;
@@ -248,7 +246,9 @@ section {
     padding: 10rem 0;
 }
 
-
+/*----------
+    Links
+-----------*/
 .coloured,
 #gmail:hover .black-white,
 #github:hover .black-white,
@@ -278,11 +278,9 @@ section {
     transition: opacity 0.25s ease-in-out;
 }
 
-/*
-    ==========
-    c) Footer
-    ==========
-*/
+/*------------
+    Footer
+-------------*/
 footer {
     background: #23272a;
     color: #ffffff;
@@ -326,14 +324,6 @@ footer a:hover {
         font-size: 52%;
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 90%;
-
-    }
-
     .links a {
         margin-right: 100px;
         margin-right: 8.0rem;
@@ -355,13 +345,9 @@ footer a:hover {
     html {
         font-size: 62%;
     }
-
+    
     .container {
-        margin: 0;
-    }
-
-    section ul li {
-        font-size: 20px;
+        width: 70%;
     }
 }
 
@@ -372,11 +358,6 @@ footer a:hover {
 @media only screen and (min-width: 992px) {
     html {
         font-size: 72%;
-    }
-
-    .container {
-        margin: 0 auto;
-        width: 45%;
     }
 
     .logo,
@@ -392,6 +373,10 @@ footer a:hover {
         margin-right: 0;
         width: 20px;
     }
+    
+    .container {
+        width: 60%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -401,13 +386,30 @@ footer a:hover {
         font-size: 2.0rem;
     }
 
+    .logo,
+    .logo:hover,
+    .logo:visited {
+        display: flex;
+        float: left;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .logo img {
+        margin-right: 1rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+
     .links {
         width: 20%;
     }
 
     footer {
-        padding: 10rem 0;;
-        
+        padding: 10rem 0;
+
         position: relative;
         bottom: 0;
         left: 0;
