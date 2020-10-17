@@ -282,12 +282,13 @@ section {
     Footer
 -------------*/
 footer {
+    padding: 10rem 0;
     background: #23272a;
     color: #ffffff;
     font-size: 24px;
     font-size: 2.4rem;
 
-    line-height: 18px;
+    line-height: 4rem;
 
     bottom: 0;
     left: 0;
@@ -408,8 +409,6 @@ footer a:hover {
     }
 
     footer {
-        padding: 10rem 0;
-
         position: relative;
         bottom: 0;
         left: 0;
@@ -423,3 +422,6 @@ footer a:hover {
         line-height: 18px;
     }
 }
+
+/* Dark Mode Pref */
+/*@media (prefers-color-scheme: dark)*/
